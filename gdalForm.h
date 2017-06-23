@@ -5,7 +5,7 @@
 #include <string>
 #include <stdio.h>
 #include <stdlib.h>
-//для работа с ввод/вывод
+//РґР»СЏ СЂР°Р±РѕС‚Р° СЃ РІРІРѕРґ/РІС‹РІРѕРґ
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -39,7 +39,7 @@ namespace gdalVisual {
 	using namespace std;
 	using namespace cv;
 	/// <summary>
-	/// Сводка для gdalForm
+	/// РЎРІРѕРґРєР° РґР»СЏ gdalForm
 	/// </summary>
 	public ref class gdalForm : public System::Windows::Forms::Form
 	{
@@ -48,13 +48,13 @@ namespace gdalVisual {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~gdalForm()
 		{
@@ -96,14 +96,14 @@ namespace gdalVisual {
 
 	private:
 		/// <summary>
-		/// Требуется переменная конструктора.
+		/// РўСЂРµР±СѓРµС‚СЃСЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Обязательный метод для поддержки конструктора - не изменяйте
-		/// содержимое данного метода при помощи редактора кода.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° - РЅРµ РёР·РјРµРЅСЏР№С‚Рµ
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ РґР°РЅРЅРѕРіРѕ РјРµС‚РѕРґР° РїСЂРё РїРѕРјРѕС‰Рё СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -133,7 +133,7 @@ namespace gdalVisual {
 			this->buttonExit->Name = L"buttonExit";
 			this->buttonExit->Size = System::Drawing::Size(279, 23);
 			this->buttonExit->TabIndex = 0;
-			this->buttonExit->Text = L"Выход";
+			this->buttonExit->Text = L"Р’С‹С…РѕРґ";
 			this->buttonExit->UseVisualStyleBackColor = false;
 			this->buttonExit->Click += gcnew System::EventHandler(this, &gdalForm::buttonExit_Click);
 			// 
@@ -147,7 +147,7 @@ namespace gdalVisual {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(498, 31);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Модуль распознования полигонов для ГИС";
+			this->label1->Text = L"РњРѕРґСѓР»СЊ СЂР°СЃРїРѕР·РЅРѕРІР°РЅРёСЏ РїРѕР»РёРіРѕРЅРѕРІ РґР»СЏ Р“РРЎ";
 			// 
 			// label2
 			// 
@@ -158,7 +158,7 @@ namespace gdalVisual {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(283, 40);
 			this->label2->TabIndex = 2;
-			this->label2->Text = L"Работа с растровым изображением \r\nв  формате GeoTIFF";
+			this->label2->Text = L"Р Р°Р±РѕС‚Р° СЃ СЂР°СЃС‚СЂРѕРІС‹Рј РёР·РѕР±СЂР°Р¶РµРЅРёРµРј \r\nРІ  С„РѕСЂРјР°С‚Рµ GeoTIFF";
 			// 
 			// geoTiffImageChoose
 			// 
@@ -166,7 +166,7 @@ namespace gdalVisual {
 			this->geoTiffImageChoose->Name = L"geoTiffImageChoose";
 			this->geoTiffImageChoose->Size = System::Drawing::Size(279, 21);
 			this->geoTiffImageChoose->TabIndex = 6;
-			this->geoTiffImageChoose->Text = L"Выбрать";
+			this->geoTiffImageChoose->Text = L"Р’С‹Р±СЂР°С‚СЊ";
 			this->geoTiffImageChoose->UseVisualStyleBackColor = true;
 			this->geoTiffImageChoose->Click += gcnew System::EventHandler(this, &gdalForm::geoTiffImageChoose_Click);
 			// 
@@ -176,7 +176,7 @@ namespace gdalVisual {
 			this->defaultImageChoose->Name = L"defaultImageChoose";
 			this->defaultImageChoose->Size = System::Drawing::Size(279, 20);
 			this->defaultImageChoose->TabIndex = 7;
-			this->defaultImageChoose->Text = L"Выбрать";
+			this->defaultImageChoose->Text = L"Р’С‹Р±СЂР°С‚СЊ";
 			this->defaultImageChoose->UseVisualStyleBackColor = true;
 			this->defaultImageChoose->Click += gcnew System::EventHandler(this, &gdalForm::defaultImageChoose_Click);
 			// 
@@ -197,7 +197,7 @@ namespace gdalVisual {
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(308, 20);
 			this->label4->TabIndex = 10;
-			this->label4->Text = L"Оригинальное (исходное) изображение";
+			this->label4->Text = L"РћСЂРёРіРёРЅР°Р»СЊРЅРѕРµ (РёСЃС…РѕРґРЅРѕРµ) РёР·РѕР±СЂР°Р¶РµРЅРёРµ";
 			// 
 			// saveFileDialogWkt
 			// 
@@ -217,7 +217,7 @@ namespace gdalVisual {
 			this->buttonStart->Name = L"buttonStart";
 			this->buttonStart->Size = System::Drawing::Size(279, 23);
 			this->buttonStart->TabIndex = 14;
-			this->buttonStart->Text = L"Выполнить";
+			this->buttonStart->Text = L"Р’С‹РїРѕР»РЅРёС‚СЊ";
 			this->buttonStart->UseVisualStyleBackColor = true;
 			this->buttonStart->Click += gcnew System::EventHandler(this, &gdalForm::buttonStart_Click);
 			// 
@@ -230,7 +230,7 @@ namespace gdalVisual {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(283, 40);
 			this->label3->TabIndex = 3;
-			this->label3->Text = L"Работа с растровым изображением \r\nв  формате .JPG, .PNG";
+			this->label3->Text = L"Р Р°Р±РѕС‚Р° СЃ СЂР°СЃС‚СЂРѕРІС‹Рј РёР·РѕР±СЂР°Р¶РµРЅРёРµРј \r\nРІ  С„РѕСЂРјР°С‚Рµ .JPG, .PNG";
 			// 
 			// label7
 			// 
@@ -241,8 +241,8 @@ namespace gdalVisual {
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(582, 40);
 			this->label7->TabIndex = 16;
-			this->label7->Text = L"Нажмите на кнопку ниже для запуска программы\r\nФайл с расширением WKT будет создан" 
-				L" автоматически на рабочем столе \r\n";
+			this->label7->Text = L"РќР°Р¶РјРёС‚Рµ РЅР° РєРЅРѕРїРєСѓ РЅРёР¶Рµ РґР»СЏ Р·Р°РїСѓСЃРєР° РїСЂРѕРіСЂР°РјРјС‹\r\nР¤Р°Р№Р» СЃ СЂР°СЃС€РёСЂРµРЅРёРµРј WKT Р±СѓРґРµС‚ СЃРѕР·РґР°РЅ" 
+				L" Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РЅР° СЂР°Р±РѕС‡РµРј СЃС‚РѕР»Рµ \r\n";
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// textBoxDefault
@@ -285,7 +285,7 @@ namespace gdalVisual {
 
 		}
 #pragma endregion
-	//ИЗОБРАЖЕНИЕ ТИФФ
+	//РР—РћР‘Р РђР–Р•РќРР• РўРР¤Р¤
 	private: 
 		System::Void geoTiffImageChoose_Click(System::Object^  sender, System::EventArgs^  e) {
 				openFileDialogGeotiff->InitialDirectory = "c:\\";	
@@ -302,7 +302,7 @@ namespace gdalVisual {
 	private: 
 		System::Void textBoxDefaultImage_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 		}
-	//ВЫБОР И ЗАГРУЗКА ПРОСТОГО ИЗОБРАЖЕНИЯ
+	//Р’Р«Р‘РћР  Р Р—РђР“Р РЈР—РљРђ РџР РћРЎРўРћР“Рћ РР—РћР‘Р РђР–Р•РќРРЇ
 	private: 
 		System::Void defaultImageChoose_Click(System::Object^  sender, System::EventArgs^  e) {
 				openFileDialogDefaultImage->InitialDirectory = "c:\\";	
@@ -313,7 +313,7 @@ namespace gdalVisual {
 				textBoxGeo->Text = " ";
 				textBoxDefault->Text = openFileDialogDefaultImage->FileName;
 		}
-	//ВЫХОД
+	//Р’Р«РҐРћР”
 	private: 
 		System::Void buttonExit_Click(System::Object^  sender, System::EventArgs^  e) {
 				 Application::Exit();
@@ -321,11 +321,11 @@ namespace gdalVisual {
 
 	private:
 		System::Void buttonStart_Click(System::Object^  sender, System::EventArgs^  e) {
-				//чтобы путь преобразовался в строку
+				//С‡С‚РѕР±С‹ РїСѓС‚СЊ РїСЂРµРѕР±СЂР°Р·РѕРІР°Р»СЃСЏ РІ СЃС‚СЂРѕРєСѓ
 				if(openFileDialogDefaultImage->FileName != " "){
 					System::String^ pathToString = openFileDialogDefaultImage->FileName;
 					std::string newPathToString = msclr::interop::marshal_as<std::string>(pathToString);
-					//провека соответствует ли формат изоражения
+					//РїСЂРѕРІРµРєР° СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р»Рё С„РѕСЂРјР°С‚ РёР·РѕСЂР°Р¶РµРЅРёСЏ
 					string pathTail = newPathToString.substr(newPathToString.size() - 3);
 
 					cv::Mat image = cv::imread(newPathToString, CV_LOAD_IMAGE_ANYCOLOR | CV_LOAD_IMAGE_ANYDEPTH);
@@ -337,26 +337,26 @@ namespace gdalVisual {
 							System::Drawing::RectangleF rect(0,0,pictureBoxOriginal->Width,pictureBoxOriginal->Height);
 							graphics->DrawImage(b,rect);
 					
-							//изменение цветв
+							//РёР·РјРµРЅРµРЅРёРµ С†РІРµС‚РІ
 							cv::cvtColor(image, image, CV_BGR2GRAY);
-							//перевод в бинарное
+							//РїРµСЂРµРІРѕРґ РІ Р±РёРЅР°СЂРЅРѕРµ
 							cv::threshold(image, image, 128, 255, CV_THRESH_BINARY);
 
-							//нахождение контура
-							//contourOutput для того чтобы оригинальоне изображение не перезаписалаось
+							//РЅР°С…РѕР¶РґРµРЅРёРµ РєРѕРЅС‚СѓСЂР°
+							//contourOutput РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РѕСЂРёРіРёРЅР°Р»СЊРѕРЅРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РЅРµ РїРµСЂРµР·Р°РїРёСЃР°Р»Р°РѕСЃСЊ
 							std::vector<std::vector<cv::Point> > contours;
 							cv::Mat contourOutput = image.clone();
-							//CV_RETR_TREE для того чтобы получить иерархисеское дерево контуров
+							//CV_RETR_TREE РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРµСЂР°СЂС…РёСЃРµСЃРєРѕРµ РґРµСЂРµРІРѕ РєРѕРЅС‚СѓСЂРѕРІ
 							cv::findContours(contourOutput, contours, CV_RETR_TREE, CV_CHAIN_APPROX_NONE);
 
-							//Рисуем контуры
+							//Р РёСЃСѓРµРј РєРѕРЅС‚СѓСЂС‹
 							cv::Mat contourImage(image.size(), CV_8UC3, cv::Scalar(0, 0, 0));
 							cv::Scalar colors[3];
 							colors[0] = cv::Scalar(255, 0, 0);
 							colors[1] = cv::Scalar(0, 255, 0);
 							colors[2] = cv::Scalar(0, 0, 255);
 
-							//работа с файлом
+							//СЂР°Р±РѕС‚Р° СЃ С„Р°Р№Р»РѕРј
 							std::ofstream tempOutFile;
 							tempOutFile.open("contours.txt");
 							for (size_t idx = 0; idx < contours.size(); idx++) {
@@ -365,13 +365,13 @@ namespace gdalVisual {
 							}
 							tempOutFile.close();
 
-							//поиск и замена в файле
+							//РїРѕРёСЃРє Рё Р·Р°РјРµРЅР° РІ С„Р°Р№Р»Рµ
 							ifstream inFile;
 							inFile.open("contours.txt");//open the input file
 							ofstream fileout("C:\\Users\\User\\Desktop\\result.wkt"); //file
 							stringstream strStream;
-							strStream << inFile.rdbuf();//читать файл
-							string str = strStream.str();//запись в строку содержмого файла
+							strStream << inFile.rdbuf();//С‡РёС‚Р°С‚СЊ С„Р°Р№Р»
+							string str = strStream.str();//Р·Р°РїРёСЃСЊ РІ СЃС‚СЂРѕРєСѓ СЃРѕРґРµСЂР¶РјРѕРіРѕ С„Р°Р№Р»Р°
 
 							replace( str.begin(), str.end(), '[', '(' );
 							replace( str.begin(), str.end(), ']', ')');
@@ -385,7 +385,7 @@ namespace gdalVisual {
 							inFile.close();
 							fileout.close();
 							remove( "contours.txt" );
-							//отобразить найденые контуры
+							//РѕС‚РѕР±СЂР°Р·РёС‚СЊ РЅР°Р№РґРµРЅС‹Рµ РєРѕРЅС‚СѓСЂС‹
 							cv::namedWindow("Contours", CV_WINDOW_NORMAL);
 							cv::resizeWindow("Contours",547,445);
 							cv::imshow("Contours", contourImage);
@@ -395,7 +395,7 @@ namespace gdalVisual {
 				}if(openFileDialogGeotiff->FileName != " "){
 					System::String^ geopathToString = openFileDialogGeotiff->FileName;
 					std::string geonewPathToString = msclr::interop::marshal_as<std::string>(geopathToString);
-					//провека соответствует ли формат изоражения
+					//РїСЂРѕРІРµРєР° СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ Р»Рё С„РѕСЂРјР°С‚ РёР·РѕСЂР°Р¶РµРЅРёСЏ
 					string geopathTail = geonewPathToString.substr(geonewPathToString.size() - 3);
 					
 					cv::Mat image = cv::imread(geonewPathToString, cv::IMREAD_LOAD_GDAL | cv::IMREAD_ANYDEPTH);
@@ -410,21 +410,21 @@ namespace gdalVisual {
 
 							image.convertTo(image, CV_8UC1);
 
-							//нахождение контура
-							//contourOutput для того чтобы оригинальоне изображение не перезаписалаось
+							//РЅР°С…РѕР¶РґРµРЅРёРµ РєРѕРЅС‚СѓСЂР°
+							//contourOutput РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РѕСЂРёРіРёРЅР°Р»СЊРѕРЅРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РЅРµ РїРµСЂРµР·Р°РїРёСЃР°Р»Р°РѕСЃСЊ
 							std::vector<std::vector<cv::Point> > contours;
 							cv::Mat contourOutput = image.clone();
-							//CV_RETR_TREE для того чтобы получить иерархисеское дерево контуров
+							//CV_RETR_TREE РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРµСЂР°СЂС…РёСЃРµСЃРєРѕРµ РґРµСЂРµРІРѕ РєРѕРЅС‚СѓСЂРѕРІ
 							cv::findContours(contourOutput, contours, CV_RETR_TREE, CV_CHAIN_APPROX_NONE);
 
-							//Рисуем контуры
+							//Р РёСЃСѓРµРј РєРѕРЅС‚СѓСЂС‹
 							cv::Mat contourImage(image.size(), CV_8UC3, cv::Scalar(0, 0, 0));
 							cv::Scalar colors[3];
 							colors[0] = cv::Scalar(255, 0, 0);
 							colors[1] = cv::Scalar(0, 255, 0);
 							colors[2] = cv::Scalar(0, 0, 255);
 
-							//работа с файлом
+							//СЂР°Р±РѕС‚Р° СЃ С„Р°Р№Р»РѕРј
 							std::ofstream tempOutFile;
 							tempOutFile.open("contours.txt");
 							for (size_t idx = 0; idx < contours.size(); idx++) {
@@ -433,13 +433,13 @@ namespace gdalVisual {
 							}
 							tempOutFile.close();
 
-							//поиск и замена в файле
+							//РїРѕРёСЃРє Рё Р·Р°РјРµРЅР° РІ С„Р°Р№Р»Рµ
 							ifstream inFile;
 							inFile.open("contours.txt");//open the input file
 							ofstream fileout("C:\\Users\\User\\Desktop\\resultTiff.wkt"); //file
 							stringstream strStream;
-							strStream << inFile.rdbuf();//читать файл
-							string str = strStream.str();//запись в строку содержмого файла
+							strStream << inFile.rdbuf();//С‡РёС‚Р°С‚СЊ С„Р°Р№Р»
+							string str = strStream.str();//Р·Р°РїРёСЃСЊ РІ СЃС‚СЂРѕРєСѓ СЃРѕРґРµСЂР¶РјРѕРіРѕ С„Р°Р№Р»Р°
 
 							replace( str.begin(), str.end(), '[', '(' );
 							replace( str.begin(), str.end(), ']', ')');
@@ -453,7 +453,7 @@ namespace gdalVisual {
 							inFile.close();
 							fileout.close();
 							remove( "contours.txt" );
-							//отобразить найденые контуры
+							//РѕС‚РѕР±СЂР°Р·РёС‚СЊ РЅР°Р№РґРµРЅС‹Рµ РєРѕРЅС‚СѓСЂС‹
 							cv::namedWindow("Contours", CV_WINDOW_NORMAL);
 							cv::resizeWindow("Contours",547,445);
 							cv::imshow("Contours", contourImage);
